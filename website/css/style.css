@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  height: auto;
+}
+header nav ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  padding-left: 10em;
+}
+header nav ul li {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #b9e26d;
+  border-radius: 10px;
+}
+header nav ul li:hover {
+  background-color: #b3b3b3;
+}
+header nav ul li:hover a {
+  color: white;
+}
+header nav ul li a {
+  color: #363535;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Audiowide, cursive;
+  letter-spacing: 1px;
+}
+header nav ul li #more {
+  pointer-events: none;
+}
+header #search {
+  width: auto;
+  height: auto;
+}
+header #search #searchBar {
+  padding: 8px;
+  border-radius: 20px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 20px;
+  border-top: 2px solid #3d9044;
+  border-bottom: 2px solid #6aaca1;
+  border-right: 2px solid #b298ca;
+  border-left: 2px solid #a489be;
+  outline: none;
+}
+header #search #searchBar::-moz-placeholder {
+  font-size: 21px;
+}
+header #search #searchBar:-ms-input-placeholder {
+  font-size: 21px;
+}
+header #search #searchBar::placeholder {
+  font-size: 21px;
+}
+
+main {
+  margin-top: 1.5em;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+main #film-list {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+main #film-list li {
+  width: 18%;
+  height: 350px;
+  border: 1px solid #0e0d0c;
+  background-color: rgba(216, 223, 238, 0.671);
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 10px;
+  position: relative;
+}
+main #film-list li:hover div {
+  visibility: visible !important;
+  height: 100% !important;
+  transition: 300ms;
+}
+main #film-list li img {
+  width: 95%;
+  height: 85%;
+  background-color: black;
+  border-radius: 10px;
+}
+main #film-list li h1 {
+  margin-top: 5px;
+  font-family: audiowide;
+}
+main #film-list li .item {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.795);
+  visibility: hidden;
+  font-family: audiowide;
+  font-size: 19px;
+  text-align: start;
+  overflow: auto;
+  word-break: break-all;
+  padding: 5px;
+  font-weight: 100 !important;
+}
+main #film-list li .item::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer a {
+  color: black;
+}
+footer i {
+  font-size: 65px;
+  cursor: pointer;
+  pointer-events: all;
+}
+footer i:hover {
+  color: purple;
+}
+footer h1 {
+  font-size: 30px;
+  font-family: audiowide, cursive;
+}/*# sourceMappingURL=style.css.map */
